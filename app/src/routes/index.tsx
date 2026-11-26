@@ -1,8 +1,6 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
 import { ArrowDown, ArrowRight, ArrowUpRight, Menu, X, MapPin, MoveUpRight, Sparkles } from "lucide-react";
 
-export const Route = createFileRoute("/")({ component: AurelHome });
 
 type Property = {
   id: number;
@@ -119,3 +117,5 @@ function AurelHome() {
     </main>
   );
 }
+
+export default AurelHome;
